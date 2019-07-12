@@ -34,8 +34,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/src/less/start-tutorial.less">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="495">
-                  <caret line="25" selection-start-line="25" selection-end-line="25" />
+                <state relative-caret-position="107">
+                  <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -129,6 +129,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -156,7 +157,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -211,12 +211,12 @@
       <workItem from="1562868913522" duration="7730000" />
       <workItem from="1562893589987" duration="154000" />
       <workItem from="1562893792629" duration="611000" />
-      <workItem from="1562894453925" duration="4288000" />
+      <workItem from="1562894453925" duration="4616000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16357000" />
+    <option name="totallyTimeSpent" value="16685000" />
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="all">
@@ -228,8 +228,8 @@
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7216797" weight="0.18958333" />
-      <window_info id="Structure" order="1" sideWeight="0.2783203" side_tool="true" visible="true" weight="0.18958333" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7193732" visible="true" weight="0.18958333" />
+      <window_info id="Structure" order="1" sideWeight="0.28062677" side_tool="true" visible="true" weight="0.18958333" />
       <window_info id="Gulp" order="2" sideWeight="0.501548" side_tool="true" weight="0.17913593" />
       <window_info id="npm" order="3" sideWeight="0.501548" side_tool="true" weight="0.17913593" />
       <window_info id="Favorites" order="4" sideWeight="0.50113124" side_tool="true" weight="0.17913593" />
@@ -342,8 +342,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/less/start-tutorial.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="107">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>
