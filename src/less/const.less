@@ -1,0 +1,83 @@
+@green: #2CD10A;
+@blue: #14CCCA;
+@dark: #754080;
+@yellow: #FFD919;
+@red: #D91A0E;
+@rose: #FF00F5;
+@button-color: #9C0DFF;
+@purple: #6B0788;
+@purple-transparent: rgba(black, 25%);
+@sspr: 'SSP--regular', sans-serif;
+@sspl: 'SSP--light', sans-serif;
+@sspb: 'SSP--Bold', sans-serif;
+@ssps: 'SSP--SemiBold', sans-serif;
+@sspr-i: 'SSP--regular--Italic', sans-serif;
+@font-face{
+    font-family: 'SSP--regular';
+    src: url(../../src/fonts/SourceSansPro-Regular.ttf)  format("truetype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: 'SSP--light';
+    src: url(../../src/fonts/SourceSansPro-Light.ttf)  format("truetype");
+    font-weight: 300;
+}
+
+@font-face{
+    font-family: 'SSP--Bold';
+    src: url(../../src/fonts/SourceSansPro-Bold.ttf)  format("truetype");
+    font-weight: 700;
+}
+
+@font-face{
+    font-family: 'SSP--SemiBold';
+    src: url(../../src/fonts/SourceSansPro-SemiBold.ttf)  format("truetype");
+    font-weight: 600;
+}
+
+@font-face{
+    font-family: 'SSP--regular--Italic';
+    src: url(../../src/fonts/SourceSansPro-Regular.ttf) format("truetype");
+    font-weight: 400;
+    font-style: italic;
+}  
+body{
+    font-family: @sspr;
+    background-color: purple;
+    color: white;
+    font-size: 18px;
+    background: linear-gradient(212.06deg, #CA0CE8 0%, #9C0DFF 72.94%) no-repeat;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    min-width: 250px;
+    position: relative;
+}
+.not-ready {
+    display: none;
+}
+
+.visually-hidden {
+    position: absolute !important;
+    visibility: hidden !important;
+    pointer-events: none !important;
+    clip: rect(0 0 0 0) !important;
+    clip-path: inset(100%) !important;
+    width: 1px !important;
+    height: 1px !important;
+    margin: -1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    text-indent: -9999px !important;
+    white-space: nowrap !important;
+    overflow: hidden !important;
+    -webkit-user-select: none !important;
+    -moz-user-select: none !important;
+    -ms-user-select: none !important;
+    user-select: none !important;
+}
+

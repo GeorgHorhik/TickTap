@@ -1,0 +1,37 @@
+.nav__search--wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-self: strech;
+    width: 100vw;
+}
+.search{
+    width: 85vw;
+    background-color: @purple;
+    border-radius: 100px;
+    height: 60px;
+    padding: 18px 32px 18px;
+    vertical-align: middle;
+    box-sizing: border-box;
+    display: inline-block;
+    &:focus{
+        outline: none;
+    }
+    &__button {
+        font-size: 0;
+        background-image: url(../../src/svg/search.svg);
+        filter: invert(1);
+        right: 55px;
+        top: 16px;
+        background-color: transparent;
+        border: 0px;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        transition: .5s;
+        &:focus{
+            outline:none;
+            opacity: .7;
+        }
+    }
+
+}

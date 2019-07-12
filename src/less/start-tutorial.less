@@ -1,0 +1,25 @@
+.main__task-list{
+    position: relative;
+}
+.start-tutorial{
+    position: fixed;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    bottom: 70px;
+    left: calc(50vw - 80px);
+    &::after{
+        content: url("../../src/svg/arrow.svg");
+        transform: rotateY(180deg) rotate(70deg) scale(0.5) translate(-18px, -35px);
+        filter: invert(1);
+        display: block;
+        width: 130px;
+    }
+}
+.if-empty{
+    width: 100vw;
+    height:  calc(100vh - 245px);
+    top: 0;
+    position: absolute;
+    position: relative;
+}
+==

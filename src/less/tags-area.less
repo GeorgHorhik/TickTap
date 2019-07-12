@@ -1,0 +1,105 @@
+.tags-area{
+    background-color: @purple;
+    border-radius: 20px;
+    width: 200px;
+    height: 206px;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    position: relative;
+    display: none;
+
+}
+.colors-list{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    width: 180px;
+    right: 7px;
+    top: -200px;
+    &--show{
+        display: flex;
+    }
+}
+
+.color{
+    border: 0px;
+    background-color: @red;
+    width: 30px;
+    margin-right: 6px;
+    height: 30px;
+    border-radius: 36px;
+    position: relative;
+    
+    &::before{
+        content: '';
+       
+    }
+    &--red{background-color:@red ;}
+    &--green{background-color:@green ;}
+    &--blue{background-color:@blue ;}
+    &--rose{background-color:@rose ;}
+    &--yellow{background-color:@yellow ;}
+    &--dotted{ 
+        &::before{
+            background-image: url("../../src/img/texture.jpg");
+            background-repeat: repeat;
+            background-size: 10px;
+            opacity: .15;
+            width: 30px;
+            height: 30px;
+            border-radius: 36px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+    }
+}
+
+.colors-list li:nth-child(5n) .color{
+    margin-right: 0px;
+}
+
+.existing-tags{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 100%;
+    margin: 0;
+
+    color: rgba(white, 0.7);
+    &--wrapper{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+    }
+}
+.tags-area__create-tag{
+    position: absolute;
+    background-color: rgba(white, 0.1);
+    width: 100%;
+    border: 0px;
+    color: white;
+    height: 23%;
+    bottom: 0;
+    transition: .5s;
+    &:focus{
+        outline: none;
+        opacity: .7;
+    }
+    &:active{
+        opacity: .3;
+    }
+}

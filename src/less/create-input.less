@@ -1,0 +1,64 @@
+.create-input{
+    display: flex;
+    background-color: @purple;
+    border-radius: 20px;
+    height: 150px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 12px;
+    align-items: center;
+    transition:  .6s;
+    display: flex;
+    margin-bottom: -160px;
+    &--show{
+        display: flex;
+    }
+}
+
+.create-input__text{
+    padding: 10px;
+    width: 60vw;
+    &:focus{
+        outline: none;
+    }
+}
+.create-input__heading{
+    font-size: 20px;
+    padding-bottom: 0;
+    transition:  .7s;
+    &--error{
+        transition:  .7s;
+        animation: input-error ease-in .7s;
+    }
+}
+.create-input__description{
+    color: rgba(white, 0.6);
+    font-size:  16px;
+}
+
+.create-input__button{
+    border: 0;
+    background: @purple;
+    height: 65px;
+    width: 65px;
+    box-shadow: 2px 2px 7px rgba(0, 0, 0, 0.318);
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    color: white;
+    font-size: 0;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg width='56' height='20' viewBox='0 0 56 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='56' height='20' rx='5' fill='white' fill-opacity='0.53'/%3E%3Cline x1='43.5' y1='3' x2='43.5' y2='16' stroke='white'/%3E%3Cline x1='50' y1='9.5' x2='37' y2='9.5' stroke='white'/%3E%3Cline x1='4' y1='8' x2='31' y2='8' stroke='white' stroke-opacity='0.6' stroke-width='2'/%3E%3Cline x1='4' y1='13.5' x2='21' y2='13.5' stroke='black' stroke-opacity='0.35'/%3E%3C/svg%3E");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40px;
+}
+
+@keyframes input-error {
+    0%,60%,100%{
+        background: rgba(red, .1);
+    }
+    30%,90%{
+        background: rgba(red, .9);
+    }
+}

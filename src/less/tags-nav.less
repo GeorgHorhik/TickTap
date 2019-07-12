@@ -1,0 +1,28 @@
+.tags-nav{
+    margin: 5px 0px;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    &__item{
+        list-style: none;
+        margin-right: 10px;
+        &:nth-child(2) .tags-nav__tagname{
+            background-color: @green;
+        }
+        &:nth-child(3) .tags-nav__tagname{
+            background-color: @yellow;
+        }
+    }
+    &__tagname{
+        border: 0px;
+        border-radius: 10px;
+        width: 30px;
+        height: 10px;
+        display: block;
+        opacity: .5;
+        background-color: @red;
+
+    }
+    
+}

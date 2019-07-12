@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="app/css/styles.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="theme-color" content="#CA0CE8" />
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="src/img/meta-icon.png">
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap&subset=cyrillic" rel="stylesheet">
+
+
+    <title>TickTap</title>
+</head>
+
+<body class="main">
+    <span class="not-ready">
+                at least for now site don't ready for you device
+            </span>
+
+    <div class="body-big-wrap">
+        <header class="main__nav nav">
+            <div class="nav__search--wrapper">
+                <button class="nav__side"></button>
+                <div class="search--inner">
+                    <span class="search" contenteditable="true" role="search"></span>
+                    <button class="search__button">
+                    </button>
+                </div>
+                <button class="nav__side"></button>
+            </div>
+            <h1 class="h1 nav__h1">All tasks</h1>
+            <nav>
+                <h3 class="visually-hidden">Навигация по тегам</h3>
+                <ul class="nav__tags-nav tags-nav">
+                    <li class="tags-nav__item">
+                        <button class="tags-nav__tagname"></button>
+                    </li>
+                    <li class="tags-nav__item">
+                        <button class="tags-nav__tagname"></button>
+                    </li>
+                    <li class="tags-nav__item">
+                        <button class="tags-nav__tagname"></button>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+        <main class="main__task-list">
+            <ul class="task-list">
+                <!-- task template -->
+                <!-- <li class="task-list__item task">
+                    <div class="task--inner">
+                        <h4 class="task__heading">Heading</h4>
+                        <p class="task__description">
+                            I need to create react app wich made my app more effective and short but i have one
+                        </p>
+                        <ul class="task__tag-list tag-list">
+                            <li class="tag-list__item">tag1</li>
+                            <li class="tag-list__item">tag2</li>
+                        </ul>
+                    </div>
+                    <input type="checkbox" name="task-complete" class="tick">
+                </li> -->
+
+            </ul>
+            <div class="if-empty">
+                <section class="start-tutorial">
+                    <p class="start-tutorial__create-task-tutorial create-task-tutorial">
+                        Tap here to create task
+                    </p>
+                </section>
+            </div>
+        </main>
+        <section class="interactive-panel--wrapper">
+            <div class="main__interactive-panel interactive-panel">
+                <h2 class="visually-hidden">fuctions panel</h2>
+                <div class="interactive-panel--inner">
+                    <button class="interactive-panel__create-task-button create-task-button" value="Create task"></button>
+                    <div class="tags-area interactive-panel__tags-area">
+                        <ul class="tags-area__colors-list colors-list">
+                            <li><button onclick="console.log(this.value)" value="#D91A0E" class="color color--red"> </button></li>
+                            <li><button onclick="console.log(this.value)" value="#FF00F5" class="color color--rose"> </button></li>
+                            <li><button onclick="console.log(this.value)" value="#FFD919" class="color color--yellow"> </button></li>
+                            <li><button onclick="console.log(this.value)" value="#2CD10A" class="color color--green"> </button></li>
+                            <li><button onclick="console.log(this.value)" value="#14CCCA" class="color color--blue"> </button></li>
+                            <li><button onclick="console.log(this.value)" value="#D91A0E dotted" class="color color--red color--dotted"></button></li>
+                            <li><button onclick="console.log(this.value)" value="#FF00F5 dotted" class="color color--rose color--dotted"> </button></li>
+                            <li><button onclick="console.log(this.value)" value="#FFD919" class="color color--yellow color--dotted"></button></li>
+                            <li><button onclick="console.log(this.value)" value="#2CD10A dotted" class="color color--green color--dotted"> </button></li>
+                            <li><button onclick="console.log(this.value)" value="#14CCCA dotted" class="color color--blue color--dotted"></button></li>
+                        </ul>
+                        <div class="existing-tags--wrapper">
+                            <ul class="existing-tags">
+                                no tags exists
+                            </ul>
+
+                            <button class="tags-area__create-tag">
+                            create new tag
+                        </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="create-input">
+                <h2 class="visually-hidden">форма создания задачи</h2>
+                <div class="create-input--inner">
+                    <div class="create-input__text create-input__heading" contenteditable="true" aria-placeholder="type task">
+                        <span class="placeholder heading__placeholder">Task</span>
+                    </div>
+                    <div class="create-input__text  create-input__description" contenteditable="true" aria-placeholder="type task">
+                        <span class="placeholder description__placeholder">Description</span>
+                    </div>
+                </div>
+                <div class="create-input--buttons-wrapper">
+                    <button class="create-input__button create-input__add-task">Add task</button>
+                </div>
+            </section>
+        </section>
+    </div>
+
+</body>
+
+</html>

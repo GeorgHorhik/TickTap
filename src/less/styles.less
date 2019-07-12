@@ -1,0 +1,42 @@
+@import  'const.less';
+
+@import  'nav.less';
+
+@import  'task-list.less';
+
+@import  'start-tutorial.less';
+
+@import  'interactive-panel.less';
+
+@import  'create-task-button.less';
+
+@import  'tags-area.less';
+
+@import  'create-input.less';
+
+
+
+@media(min-width: 1000px){
+    .body-big-wrap{
+        display: none;
+    }
+    .not-ready {
+        
+        font-size: 40px;
+        font-family: @sspr;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        background: linear-gradient(212.06deg, #CA0CE8 0%, #9C0DFF 72.94%);
+        width: 100vw;
+        height: 100vh;
+        display: block;
+        padding: 2vw;
+        box-sizing: border-box;
+        text-transform: uppercase;
+        color: white;
+        line-height: 3em;
+        animation: media;
+        transition: .2s;
+    }
+}
